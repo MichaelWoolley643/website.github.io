@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Woolley Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            background-image: url("https://media.tenor.com/XqfdrbMLpI4AAAAM/retro-anime.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Dark overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .title {
+            color: white;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 40px;
+
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .card {
+            height: 250px;
+
+            background: rgba(0, 0, 0, 0.7);
+
+            border-radius: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        h1,
+        h2,
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="websitelogo.png" alt="Logo" class="logo">
+
+        <div class="title">
+            <h1>Michael Woolley</h1>
+            <p>Web Design Portfolio</p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="grid">
+
+            <div class="card">
+                <h2>Block Code</h2>
+            </div>
+
+            <div class="card">
+                <h2>Python</h2>
+            </div>
+
+            <div class="card">
+                <h2>JavaScript</h2>
+            </div>
+
+            <div class="card">
+                <h2>HTML</h2>
+            </div>
+
+            <div class="card">
+                <h2>Do Nows</h2>
+            </div>
+
+            <div class="card">
+                <h2>Final Projects</h2>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
